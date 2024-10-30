@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*_________________________*\
+*Base
+\*_________________________*/
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    @apply bg-zinc-900 text-zinc-50
+}
