@@ -3,6 +3,10 @@
  * @license Apache-2.0
  */
 
+/**
+ * Components
+ */
+import Navbar from "./Navbar"
 
 const Header = () => {
     return (
@@ -26,7 +30,7 @@ const Header = () => {
                             menu
                         </span>
                     </button>
-                    navbar
+                    <Navbar/>
                 </div>
 
                 <a href="#contact" className=""
