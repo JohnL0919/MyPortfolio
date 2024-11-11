@@ -14,7 +14,7 @@ import { useState } from "react"
 import Navbar from "./Navbar"
 
 const Header = () => {
-    const[navOpen, setNavOpen] = useState(false);
+    const [navOpen, setNavOpen] = useState(false);
 
     return (
 <header className="fixed top-0 left-0 w-full h-20 flex items-center 
@@ -28,23 +28,24 @@ const Header = () => {
                     </a>
                 </h1>
 
-                <div className="relative md:justify-self-center">
+                <div className="relative md:justify-self-center ">
                     <button 
-                        className="menu-btn md:hidden"
+                        className=" md:hidden menu-btn menu-btn"
                         onClick={ () => setNavOpen((prev) => !prev) }
                     >
                         <span className="material-symbols-rounded">
-                            menu
+                            {navOpen ? 'close' : 'menu'}
                         </span>
                     </button>
                     <Navbar navOpen={navOpen}/>
                 </div>
 
-                <a href="#contact" 
-                className="btn btn-secondary hidden md:block md:justify-self-end"
-                >
-                    Contact Me
-                </a>
+                <div className="hidden md:block">
+                    <a href="#contact" className="btn btn-secondary md:justify-self-end">
+                        Contact Me
+                    </a>
+                </div>
+                
                 
             </div>
         </header>
