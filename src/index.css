@@ -17,6 +17,24 @@ body{
 }
 
 /*_________________________*\
+*Typography
+\*_________________________*/
+
+.headline-1 {
+    @apply max-w-max;
+    background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.headline-1 {
+    @apply text-5xl leading-tight font-semibold lg:text-[55px]
+    lg:leading-[1.15]
+}
+
+
+
+/*_________________________*\
 *Utilities
 \*_________________________*/
 
@@ -24,6 +42,46 @@ body{
     @apply w-[1em] h-[1em] overflow-hidden;
     font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
+
+.container {
+    @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
+}
+
+.img-box {
+    @apply bg-zinc-700 overflow-hidden;
+}
+
+.img-cover {
+    @apply w-full h-full object-cover
+}
+/* Animate Ping */
+@keyframes custom-ping {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    75%, 100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+}
+  
+.custom-animate-ping {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(16, 185, 129, 1); /* emerald-400 */
+    border-radius: 9999px; /* rounded-full */
+    animation: custom-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.custom-container {
+    width: 100%; /* w-full */
+    max-width: 480px; /* max-w-[480px] */
+    margin-left: auto; /* ml-auto */
+    border-radius: 60px; /* rounded-[60px] */
+    overflow: hidden; /* overflow-hidden */
+  }
+  
 
 /*_________________________*\
 *Component
