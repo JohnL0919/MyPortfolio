@@ -5,11 +5,11 @@
 
 const aboutItems = [
   {
-    label: "Project done",
-    number: 45,
+    label: "Coding Projects Done",
+    number: 2,
   },
   {
-    label: "Years of experience",
+    label: "Photography Clients",
     number: 10,
   },
 ];
@@ -26,16 +26,26 @@ const About = () => {
             hands-on problem-solving, I’m always eager to explore new tools,
             refine my expertise, and grow professionally.
           </p>
+          <p className="pt-2">
+            I also have a passion in photography, combining my love for
+            landscapes, street photography, and cars. I’m fascinated by the
+            endless opportunities for storytelling that each genre provides.
+            Whether it’s the serenity of the outdoors, the hustle of city life,
+            or the craftsmanship of automobiles, I aim to bring those stories to
+            life with every shot.
+          </p>
 
-          <div className="">
+          <div className="flex flex-wrap items-center gap-4 md:gap-7 pt-4">
             {aboutItems.map(({ label, number }, key) => (
               <div key={key}>
-                <div className="">
-                  <span className="">{number}</span>
-                  <span className="">+</span>
+                <div className="flex items-center md:mb-2">
+                  <span className="text-2xl font-semibold md:text-4xl">
+                    {number}
+                  </span>
+                  <span className="font-semibold md:text-3xl">+</span>
                 </div>
 
-                <p className="">{label}</p>
+                <p className="text-sm text-zinc-400">{label}</p>
               </div>
             ))}
 
@@ -44,7 +54,7 @@ const About = () => {
               alt="Logo"
               width={30}
               height={30}
-              className=""
+              className="ml-auto md:w-[40px] md:h-[40px]"
             />
           </div>
         </div>
