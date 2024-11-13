@@ -2,6 +2,10 @@
  * @copyright 2024 John Lin
  * @license Apache-2.0
  */
+/**
+ * Components
+ */
+import SkillCard from "./SkillCard";
 
 const skillItem = [
   {
@@ -56,8 +60,11 @@ const Skill = () => {
           Discover the powerful tools and technologies I use to create
           exceptional, high-performing websites & applications.
         </p>
-        <div className="">
-          {skillItem.map(({ imgSrc, label, desc }, key) => "SkillCard")}
+
+        <div className="skill-cards-container">
+          {skillItem.map(({ imgSrc, label, desc }, key) => (
+            <SkillCard key={key} imgSrc={imgSrc} label={label} desc={desc} />
+          ))}
         </div>
       </div>
     </section>
