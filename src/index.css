@@ -30,6 +30,10 @@ body {
     lg:leading-[1.15];
 }
 
+.custom-text {
+  @apply text-zinc-300 mb-4 p-7 bg-zinc-800/50 rounded-2xl;
+}
+
 /*_________________________*\
 *Utilities
 \*_________________________*/

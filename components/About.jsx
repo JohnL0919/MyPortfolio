@@ -16,10 +16,10 @@ const aboutItems = [
 
 const About = () => {
   return (
-    <section id="about" className="section ">
-      <div className="container ">
-        <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12">
-          <p className="text-zinc-300 mb-4 md:mb-8 md:text-cl md:max-w-[60ch]">
+    <section id="about" className="section">
+      <div className="container">
+        <div className="custom-text">
+          <p className="">
             Welcome! I&apos;m John, an aspiring Full-Stack Developer who
             constantly seeks new knowledge and skills to stay adaptable and
             inspired. Whether through internships, self-guided projects, or
