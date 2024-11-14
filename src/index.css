@@ -36,7 +36,12 @@ body {
 }
 
 .custom-text {
-  @apply text-zinc-300 mb-4 p-7 bg-zinc-800/50 rounded-2xl;
+  @apply text-zinc-300 mb-4 
+  p-7 bg-zinc-800/50 rounded-2xl;
+}
+
+.title-1 {
+  @apply text-[22px] font-normal;
 }
 
 /*_________________________*\
