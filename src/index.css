@@ -167,6 +167,39 @@ body {
   font-size: 0.875rem;
 }
 
+/* Project Card Hover Effects */
+.project-card {
+  position: relative;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #27272a; /* Equivalent to bg-zinc-800 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05); /* ring-1 ring-inset ring-zinc-50/5 */
+}
+
+.project-card:hover {
+  background-color: rgba(39, 39, 42, 0.5); /* hover:bg-zinc-700/50 */
+  transform: scale(1.05); /* Scales the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+}
+
+.project-card:active {
+  background-color: rgba(39, 39, 42, 0.6); /* active:bg-zinc-700/60 */
+}
+
+/* Default single-column layout */
+.project-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Multi-column layout for screens wider than 768px */
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
 /*_________________________*\
 *Component
 \*_________________________*/
