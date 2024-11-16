@@ -53,6 +53,11 @@ const Review = () => {
     <section id="reviews" className="section">
       <div className="container">
         <h2 className="headline-2">What Our Customers Say</h2>
+        <div className="">
+          {reviews.map(
+            ({ content, name, imgSrc, company }, key) => "ReviewCard"
+          )}
+        </div>
       </div>
     </section>
   );
