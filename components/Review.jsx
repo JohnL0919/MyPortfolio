@@ -3,6 +3,12 @@
  * @license Apache-2.0
  */
 
+/**
+ * Component
+ */
+
+import ReviewCard from "./ReviewCard";
+
 const reviews = [
   {
     content:
@@ -50,13 +56,19 @@ const reviews = [
 
 const Review = () => {
   return (
-    <section id="reviews" className="section">
+    <section id="reviews" className="section overflow-hidden py-16">
       <div className="container">
-        <h2 className="headline-2">What Our Customers Say</h2>
-        <div className="">
-          {reviews.map(
-            ({ content, name, imgSrc, company }, key) => "ReviewCard"
-          )}
+        <h2 className="headline-2 mb-8">What Our Customers Say</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {reviews.map(({ content, name, imgSrc, company }, key) => (
+            <ReviewCard
+              key={key}
+              name={name}
+              imgSrc={imgSrc}
+              company={company}
+              content={content}
+            />
+          ))}
         </div>
       </div>
     </section>

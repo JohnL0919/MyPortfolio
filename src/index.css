@@ -200,6 +200,47 @@ body {
   }
 }
 
+/* Review card styles scoped */
+#reviews .review-card {
+  background-color: #2d2d2d;
+  color: #e5e5e5;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch; /* Ensures content stretches to align text */
+  min-width: 320px;
+  max-width: 420px; /* Optional: set max width for card consistency */
+  box-sizing: border-box;
+}
+
+/* Adjust text content for better alignment */
+#reviews .review-card p {
+  margin: 0;
+  line-height: 1.5;
+  text-align: left; /* Align text to the left */
+}
+
+/* Adjust for reviewer name and company info */
+#reviews .reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+#reviews .reviewer-info p {
+  margin: 0;
+  text-align: left;
+  color: #a1a1a1;
+}
+
+#reviews .reviewer-info .subtext {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
 /*_________________________*\
 *Component
 \*_________________________*/
