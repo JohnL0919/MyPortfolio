@@ -5,7 +5,7 @@
 
 const socialLinks = [
   {
-    href: "https://www.github.com/codewithsadee-org",
+    href: "https://github.com/JohnL0919",
     icon: (
       <svg
         width="24"
@@ -23,7 +23,7 @@ const socialLinks = [
     alt: "GitHub",
   },
   {
-    href: "https://www.linkedin.com/in/codewithsadee",
+    href: "https://www.linkedin.com/in/john-lin-5373b5179/",
     icon: (
       <svg
         width="24"
@@ -41,25 +41,7 @@ const socialLinks = [
     alt: "LinkedIn",
   },
   {
-    href: "https://x.com/codewithsadee_",
-    icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M6.25 3C4.46403 3 3 4.46403 3 6.25V17.75C3 19.536 4.46403 21 6.25 21H17.75C19.536 21 21 19.536 21 17.75V6.25C21 4.46403 19.536 3 17.75 3H6.25ZM6.25 4.5H17.75C18.725 4.5 19.5 5.27497 19.5 6.25V17.75C19.5 18.725 18.725 19.5 17.75 19.5H6.25C5.27497 19.5 4.5 18.725 4.5 17.75V6.25C4.5 5.27497 5.27497 4.5 6.25 4.5ZM6.91406 7L10.7822 12.5283L6.91113 17H7.93262L11.2344 13.1758L13.9102 17H17.1289L13.0127 11.1172L16.5684 7H15.5684L12.5615 10.4717L10.1328 7H6.91406ZM8.46777 7.84766H9.74902L15.5752 16.1523H14.2939L8.46777 7.84766Z"
-          fill="currentColor"
-        />
-      </svg>
-    ),
-    alt: "Twitter X",
-  },
-  {
-    href: "https://www.instagram.com/codewithsadee",
+    href: "https://www.instagram.com/johnl.jpg/",
     icon: (
       <svg
         width="25"
@@ -81,26 +63,33 @@ const socialLinks = [
 const Contact = () => {
   return (
     <section id="contact" className="section">
-      <div className="container">
-        <div className="">
-          <h2 className="headline-2">Contact Me for Collaboration</h2>
-          <p className="">
+      <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
+        <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
+          <h2 className="headline-2 lg:max-w-[12xh]">
+            Contact Me for Collaboration
+          </h2>
+          <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch]">
             Reach out today to discuss your project needs and start
             collaborating on something amazing!
           </p>
 
-          <div className="">
+          <div className="flex itmes-center gap-2 mt-auto">
             {socialLinks.map(({ href, icon }, key) => (
-              <a key={key} href={href} target="_blank" className="">
+              <a
+                key={key}
+                href={href}
+                target="_blank"
+                className=" project-card:active  project-card:hover project-card"
+              >
                 {icon}
               </a>
             ))}
           </div>
         </div>
 
-        <form action="" method="POST" className="">
-          <div className="">
-            <div className="">
+        <form action="" method="POST" className="xl:pl-10 2xl:pl-20">
+          <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
+            <div className="mb-4">
               <label htmlFor="name" className="label">
                 Name
               </label>
