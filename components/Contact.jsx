@@ -87,8 +87,13 @@ const Contact = () => {
           </div>
         </div>
 
-        <form action="" method="POST" className="xl:pl-10 2xl:pl-20">
+        <form
+          action="https://getform.io/f/arooglpb"
+          method="POST"
+          className="xl:pl-10 2xl:pl-20"
+        >
           <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
+            {/* name */}
             <div className="mb-4">
               <label htmlFor="name" className="label">
                 Name
@@ -100,12 +105,12 @@ const Contact = () => {
                 id="name"
                 autoComplete="name"
                 required
-                placeholder="John Lin"
+                placeholder="Homer Simpson"
                 className="text-field"
               />
             </div>
-
-            <div className="">
+            {/* email */}
+            <div className="mb-4">
               <label htmlFor="email" className="label">
                 Email
               </label>
@@ -116,28 +121,33 @@ const Contact = () => {
                 id="email"
                 autoComplete="email"
                 required
-                placeholder="John@example.com"
+                placeholder="Homer@example.com"
                 className="text-field"
               />
             </div>
           </div>
-
-          <div className="">
+          {/* message */}
+          <div className="mb-4">
             <label htmlFor="message" className="label">
               Message
             </label>
             <textarea
               name="message"
               id="message"
-              className="text-field"
-              placeholder="Hi!"
+              className="text-field resize-y min-h-32 max-h-80"
+              placeholder="What Would You Like to Chat About?"
               required
             ></textarea>
           </div>
-
-          <button type="submit" className="btn btn-primary">
-            Submit
-          </button>
+          {/* button */}
+          <div className="w-full">
+            <button
+              type="submit"
+              className="w-full bg-blue-500 text-white py-2 px-4 rounded"
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </section>
