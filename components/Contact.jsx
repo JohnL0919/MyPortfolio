@@ -65,10 +65,10 @@ const Contact = () => {
     <section id="contact" className="section">
       <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
         <div className="mb-12 lg:mb-0 lg:flex lg:flex-col">
-          <h2 className="headline-2 lg:max-w-[12xh]">
+          <h2 className="headline-2 lg:max-w-[12xh] reveal-up">
             Contact Me for Collaboration
           </h2>
-          <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch]">
+          <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
             Reach out today to discuss your project needs and start
             collaborating on something amazing!
           </p>
@@ -79,7 +79,7 @@ const Contact = () => {
                 key={key}
                 href={href}
                 target="_blank"
-                className=" project-card:active  project-card:hover project-card"
+                className=" project-card:active  project-card:hover project-card reveal-up"
               >
                 {icon}
               </a>
@@ -95,7 +95,7 @@ const Contact = () => {
           <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
             {/* name */}
             <div className="mb-4">
-              <label htmlFor="name" className="label">
+              <label htmlFor="name" className="label reveal-up">
                 Name
               </label>
 
@@ -106,12 +106,12 @@ const Contact = () => {
                 autoComplete="name"
                 required
                 placeholder="Homer Simpson"
-                className="text-field"
+                className="text-field reveal-up"
               />
             </div>
             {/* email */}
             <div className="mb-4">
-              <label htmlFor="email" className="label">
+              <label htmlFor="email" className="label reveal-up">
                 Email
               </label>
 
@@ -122,19 +122,19 @@ const Contact = () => {
                 autoComplete="email"
                 required
                 placeholder="Homer@example.com"
-                className="text-field"
+                className="text-field reveal-up"
               />
             </div>
           </div>
           {/* message */}
           <div className="mb-4">
-            <label htmlFor="message" className="label">
+            <label htmlFor="message" className="label reveal-up">
               Message
             </label>
             <textarea
               name="message"
               id="message"
-              className="text-field resize-y min-h-32 max-h-80"
+              className="text-field resize-y min-h-32 max-h-80 reveal-up"
               placeholder="What Would You Like to Chat About?"
               required
             ></textarea>
@@ -143,7 +143,7 @@ const Contact = () => {
           <div className="w-full">
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-2 px-4 rounded"
+              className="w-full bg-blue-500 text-white py-2 px-4 rounded reveal-up"
             >
               Submit
             </button>

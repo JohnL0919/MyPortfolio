@@ -3,6 +3,18 @@
  * @license Apache-2.0
  */
 
+/*
+ * Node Modules
+ */
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+/**
+ * Register gsap plugins
+ */
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 /**
  * Component
  */
@@ -55,11 +67,23 @@ const reviews = [
 ];
 
 const Review = () => {
+  useGSAP(() => {
+    gsap.to(".scrub-slide", {
+      scrollTrigger: {
+        trigger: ".scrub-slide",
+        start: "-200% 80%",
+        end: "400% 80%",
+        scrub: true,
+      },
+      x: "-650",
+    });
+  });
+
   return (
     <section id="reviews" className="section overflow-hidden py-16">
       <div className="container">
-        <h2 className="headline-2 mb-8">What Our Customers Say</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="headline-2 mb-8 reveal-up">What Our Customers Say</h2>
+        <div className="scrub-slide flex items-stretch gap-3 w-fit">
           {reviews.map(({ content, name, imgSrc, company }, key) => (
             <ReviewCard
               key={key}
