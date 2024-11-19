@@ -18,7 +18,7 @@ const About = () => {
   return (
     <section id="about" className="section">
       <div className="container">
-        <div className="custom-text">
+        <div className="custom-text reveal-up">
           <p className="">
             Welcome! I&apos;m John, an aspiring Full-Stack Developer who
             constantly seeks new knowledge and skills to stay adaptable and

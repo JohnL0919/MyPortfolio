@@ -200,6 +200,10 @@ body {
   }
 }
 
+.reveal-up {
+  @apply translate-y-20 opacity-0;
+}
+
 /* Review card styles scoped */
 #reviews .review-card {
   background-color: #2d2d2d;
