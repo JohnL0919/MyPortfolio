@@ -241,6 +241,20 @@ body {
   letter-spacing: 0.05em;
 }
 
+/*Hover Effect for Footer*/
+.custom-link {
+  display: block; /* Equivalent to 'block' */
+  font-size: 0.875rem; /* Equivalent to 'text-sm' in Tailwind (14px) */
+  color: #a1a1aa; /* Equivalent to 'text-zinc-400' */
+  padding-top: 0.25rem; /* Equivalent to 'py-1' (4px top and bottom padding) */
+  padding-bottom: 0.25rem;
+  transition: color 0.2s ease-in-out; /* Equivalent to 'transition-colors' */
+}
+
+.custom-link:hover {
+  color: #e4e4e7; /* Equivalent to 'hover:text-zinc-200' */
+}
+
 /*_________________________*\
 *Component
 \*_________________________*/
