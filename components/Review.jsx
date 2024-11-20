@@ -24,6 +24,21 @@ import ReviewCard from "./ReviewCard";
 const reviews = [
   {
     content:
+      "Excellent project execution! High-quality code, responsive design, and exceptional problem-solving skills.",
+    name: "Jonathan",
+    imgSrc: "/images/people-6.jpg",
+    company: "Skyline Digital",
+  },
+  {
+    content:
+      "Outstanding developer! Built a robust site with perfect functionality. Efficient and detail-oriented.",
+    name: "Liam Bennett",
+    imgSrc: "/images/people-3.jpg",
+    company: "CodeCraft",
+  },
+
+  {
+    content:
       "Exceptional web development! Delivered a seamless, responsive site with clean code and great UX.",
     name: "Sophia Ramirez",
     imgSrc: "/images/people-1.jpg",
@@ -35,6 +50,13 @@ const reviews = [
     name: "Ethan Caldwell",
     imgSrc: "/images/people-2.jpg",
     company: "NexaWave",
+  },
+  {
+    content:
+      "Exceptional web development! Delivered a seamless, responsive site with clean code and great UX.",
+    name: "Sophia Ramirez",
+    imgSrc: "/images/people-1.jpg",
+    company: "PixelForge",
   },
   {
     content:
@@ -75,7 +97,7 @@ const Review = () => {
         end: "400% 80%",
         scrub: true,
       },
-      x: "-650",
+      x: "-1100",
     });
   });
 
