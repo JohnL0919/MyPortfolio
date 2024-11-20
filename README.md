@@ -1,5 +1,5 @@
-# MyPortfolio
-## This is My Portfolio Website !
+# MyPortfolio - My Portfolio Website !
+### The Website Link: https://john-lin.netlify.app/
 
 This portfolio website serves as a practical project to hone my technical skills in web development. It allowed me to apply and deepen my understanding of modern tools and technologies such as React JS, Tailwind CSS, GSAP, and Lenis, while also gaining experience in deploying and managing live projects using Netlify.
 
