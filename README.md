@@ -13,4 +13,4 @@ Specifically:
 
 * Best Practices: Throughout, I applied best practices for React development, including structured components and organized layouts to ensure the project is functional and visually appealing across devices.
 
-* This project deepened my understanding of building interactive, professional web applications with React and modern frontend tools, making it easier to design and implement highly responsive, user-friendly interfaces.
+This project deepened my understanding of building interactive, professional web applications with React and modern frontend tools, making it easier to design and implement highly responsive, user-friendly interfaces.
