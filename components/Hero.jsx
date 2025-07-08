@@ -63,7 +63,7 @@ const Hero = () => {
         <div className="hidden lg:block">
           <figure className="custom-container">
             <img
-              src="/images/avatar-2.jpg"
+              src="/images/avatar-3.jpeg"
               width={656}
               height={800}
               alt="John Lin"
