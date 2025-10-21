@@ -21,10 +21,7 @@ const sitemap = [
     label: "Work",
     href: "#work",
   },
-  {
-    label: "Reviews",
-    href: "#reviews",
-  },
+
   {
     label: "Contact me",
     href: "#contact",

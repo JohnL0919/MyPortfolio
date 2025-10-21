@@ -48,6 +48,21 @@ const skillItem = [
     label: "TailwindCSS",
     desc: "User Interface",
   },
+  {
+    imgSrc: "/images/typescript.svg",
+    label: "TypeScript",
+    desc: "JavaScript with Types",
+  },
+  {
+    imgSrc: "/images/nextjs.svg",
+    label: "Next.js",
+    desc: "React Framework",
+  },
+  {
+    imgSrc: "/images/firebase.svg",
+    label: "Firebase",
+    desc: "Backend Platform",
+  },
 ];
 
 const Skill = () => {

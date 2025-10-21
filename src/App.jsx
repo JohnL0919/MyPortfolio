@@ -24,10 +24,8 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Skill from "../components/Skill";
 import Work from "../components/Work";
-import Review from "../components/Review";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import { element } from "prop-types";
 
 const App = () => {
   useGSAP(() => {
@@ -57,7 +55,6 @@ const App = () => {
         <About />
         <Skill />
         <Work />
-        <Review />
         <Contact />
       </main>
       <Footer />
