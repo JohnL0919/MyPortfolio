@@ -10,40 +10,11 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    imgSrc: "/images/project-1.jpg",
-    title: "PlaceHolder",
-    tags: ["API", "MVC", "Development"],
-    projectLink: "/",
-  },
-  {
-    imgSrc: "/images/project-2.jpg",
-    title: "PlaceHolder",
-    tags: ["API", "SPA"],
-    projectLink: "/",
-  },
-  {
-    imgSrc: "/images/project-3.jpg",
-    title: "PlaceHolder",
-    tags: ["Development", "API"],
-    projectLink: "",
-  },
-  {
-    imgSrc: "/images/project-4.jpg",
-    title: "PlaceHolder",
-    tags: ["Web-design", "Development"],
-    projectLink: "/",
-  },
-  {
-    imgSrc: "/images/project-5.jpg",
-    title: "PlaceHolder",
-    tags: ["eCommerce", "Development"],
-    projectLink: "/",
-  },
-  {
-    imgSrc: "/images/project-6.jpg",
-    title: "PlaceHolder",
-    tags: ["Web-design", "Development"],
-    projectLink: "/",
+    imgSrc: "/images/scenic1.jpg",
+    title: "ScenicShare",
+    tags: ["TypeScript", "Next.js", "TailwindCSS", "Firebase"],
+    projectLink:
+      "https://scenicshare-backend--scenicshare-c3d7c.asia-southeast1.hosted.app/",
   },
 ];
 
